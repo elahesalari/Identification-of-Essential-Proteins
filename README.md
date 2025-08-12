@@ -8,7 +8,7 @@ This repository implements the method described in the paper **"Identification o
 
 Essential proteins are crucial for the survival and reproduction of organisms. Their loss often results in lethality or infertility, making them indispensable for cellular life. Compared to non-essential proteins, essential proteins tend to be more conserved throughout biological evolution. These proteins serve as promising targets for developing new drugs and vaccines aimed at treating and preventing diseases.
 
-Advancements in high-throughput technologies—such as yeast two-hybrid systems and mass spectrometry—have generated extensive protein–protein interaction (PPI) datasets. These datasets enable the study of essential proteins at the network level.
+Advances in high-throughput technologies such as yeast two-hybrid systems and mass spectrometry have generated extensive protein-protein interaction (PPI) datasets. This dataset enables the study of essential proteins in the graph network.
 
 ---
 
