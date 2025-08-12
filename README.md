@@ -1,41 +1,36 @@
-# Identification-of-Essential-Proteins
-<b>Implement the paper "Identification of Essential Proteins Based on Improved HITS Algorithm".</b>
+# Identification of Essential Proteins
 
-Essential proteins are vital for the life and reproduction of organisms, 
-and play a very important role in maintaining cellular life. If the 
-destruction of a certain protein would cause lethality or infertility, it can 
-be said that it is essential to an organism, that is, the organism could not 
-survive without it. Compared with non-essential proteins, essential 
-proteins are more likely to remain in biological evolution. For example, 
-essential proteins are excellent targets for the development of new 
-potential drugs and vaccines for the treatment and prevention of 
-diseases.
-With the development of high-throughput technologies, such as yeast 
-two-hybrid system and mass spectrometry analysis various protein–
-protein interaction (PPI) data are available, which facilitates the studies 
-of essential proteins at the network level.
+This repository implements the method described in the paper **"Identification of Essential Proteins Based on Improved HITS Algorithm."**
 
-<b>Task:</b>
-<br/>
-1. Build a Protein-Protein Interaction bidirectional Network using the
-Gavin_PPI dataset.
-2. Use the biological information and network topological features to 
-weigh the edges separately:<br/>
-  I. Use Edge Clustering Coefficient on nodes of graph for 
-  topological features. <br/>
-  II. Use Pearson Correlation Coefficient (PCC) on gene 
-  expression data for biological information.
-3. Use Hypertext Induced Topic Search (HITS) algorithm to identify 
-essential nodes (Proteins).
-4. Use several statistical measures, namely sensitivity (SN), 
-specificity (SP), positive predictive value (PPV), F-measure (F), 
-and accuracy (ACC) to evaluate your method.
+---
 
-<b>Datasets: </b>
-<br/>
-➢ Set of Saccharomyces cerevisiae PPI network from Gavin 
-database.<br/>
-➢ The gene expression data of Saccharomyces cerevisiae from GEO 
-database.<br/>
-➢ The list of known essential proteins collected from Saccharomyces 
-Genome Database.<br/>
+## Overview
+
+Essential proteins are crucial for the survival and reproduction of organisms. Their loss often results in lethality or infertility, making them indispensable for cellular life. Compared to non-essential proteins, essential proteins tend to be more conserved throughout biological evolution. These proteins serve as promising targets for developing new drugs and vaccines aimed at treating and preventing diseases.
+
+Advancements in high-throughput technologies—such as yeast two-hybrid systems and mass spectrometry—have generated extensive protein–protein interaction (PPI) datasets. These datasets enable the study of essential proteins at the network level.
+
+---
+
+## Implimentation stages
+
+1. **Construct a bidirectional Protein-Protein Interaction (PPI) network** using the Gavin_PPI dataset.  
+2. **Assign weights to network edges** based on:  
+   - **Topological features:** Edge Clustering Coefficient of the graph nodes.  
+   - **Biological information:** Pearson Correlation Coefficient (PCC) computed from gene expression data.  
+3. **Apply the Hypertext Induced Topic Search (HITS) algorithm** to identify essential proteins (key nodes) within the PPI network.  
+4. **Evaluate the method** using statistical metrics including:  
+   - Sensitivity (SN)  
+   - Specificity (SP)  
+   - Positive Predictive Value (PPV)  
+   - F-measure (F)  
+   - Accuracy (ACC)  
+
+---
+
+## Datasets
+
+- Saccharomyces cerevisiae PPI network from the **Gavin database**.  
+- Gene expression data of *Saccharomyces cerevisiae* from the **GEO database**.  
+- Known essential protein list from the **Saccharomyces Genome Database**.
+
